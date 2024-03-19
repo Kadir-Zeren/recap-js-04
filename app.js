@@ -27,10 +27,22 @@
 // }
 // console.log("BYE");
 
-let not = prompt("Lutfen 0-100 arasinda bir not giriniz:");
+// while (not < 0 || not > 100) {
+//   console.log("Not 0'dan kucuk veya 100'den buyuk olamaz");
+//   not = prompt("Lutfen 0-100 arasinda bir not giriniz:");
+// }
 
-while (not < 0 || not > 100) {
-  console.log("Not 0'dan kucuk veya 100'den buyuk olamaz");
+// let not;
+// do {
+//   not = prompt("Lutfen 0-100 arasinda bir not giriniz:");
+//   if (not < 0 || not > 100) {
+//     alert("Not 0'dan kucuk veya 100'den buyuk olamaz");
+//   }
+// } while (not < 0 || not > 100);
+
+let not = prompt("Lutfen 0-100 arasinda bir not giriniz:");
+for (; not < 0 || not > 100; ) {
+  alert("Not 0'dan kucuk veya 100'den buyuk olamaz");
   not = prompt("Lutfen 0-100 arasinda bir not giriniz:");
 }
 
